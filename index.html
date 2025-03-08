@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GOFUN娛樂城 - 亞洲領先的USDT加密貨幣娛樂平台 | gofun官網</title>
+    <meta name="description" content="GOFUN官網 - 亞洲頂級USDT加密貨幣娛樂平台，提供安全可靠的USDT支付、即時體育博彩、電子遊戲和真人娛樂城。立即註冊享受最高3,888USDT首存優惠和VIP專屬服務。">
+    <meta name="keywords" content="gofun官網, gofun, USDT娛樂城, 加密貨幣娛樂城, GOFUN娛樂城, USDT娛樂平台, 加密貨幣賭場, 在線USDT博彩, 加密賭場, 加密貨幣體育博彩">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <meta property="og:title" content="GOFUN加密貨幣娛樂城 | 首選USDT賭場 - 註冊送888USDT">
+    <meta property="og:description" content="亞洲頂級加密貨幣娛樂平台，支持USDT、BTC等多種加密貨幣。提供體育博彩、真人娛樂城、電子競技等豐富遊戲體驗。新用戶註冊送888USDT，首存最高送3,888USDT。">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="GOFUN娛樂">
+    <meta property="og:image" content="https://gofun50.vip/images/og-image.jpg">
+    <meta property="og:locale" content="zh_TW">
+    <meta property="og:url" content="https://gofun50.vip">
+    <link rel="icon" type="image/png" href="/images/icon_deposit1.png">
+    <link rel="apple-touch-icon" href="/images/icon_deposit1.png">
+    <link rel="canonical" href="https://gofun50.vip" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "GOFUN娛樂城",
+      "url": "https://gofun50.vip",
+      "logo": "https://gofun50.vip/images/logo.png",
+      "description": "GOFUN官網 - 亞洲頂級USDT加密貨幣娛樂平台，提供安全可靠的USDT支付、即時體育博彩、電子遊戲和真人娛樂城。",
+      "sameAs": [
+        "https://www.facebook.com/gofun",
+        "https://www.twitter.com/gofun",
+        "https://www.instagram.com/gofun"
+      ]
+    }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img width="380" height="138" src="images/logo.png" alt="GOFUN官網加密貨幣娛樂城Logo" loading="lazy">
+        </div>
+    </header>
+
+    <main class="main-section">
+        <section class="banner">
+            <img src="images/frame_1641@1x-1.png" loading="lazy" alt="GOFUN USDT娛樂城橫幅圖片">
+            <div class="banner-content">
+                <h1>GOFUN加密貨幣娛樂城 - 您的首選USDT娛樂平台</h1>
+                <p>新會員註冊送28 USDT，首存最高贈送3,888 USDT</p>
+                <div class="cta-container" style="text-align: center; margin: 20px auto;">
+                    <a href="https://97y.me/q8quh" class="cta-btn" rel="noopener">立即註冊</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            const hamburger = document.querySelector('.hamburger');
+            const isActive = menu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+            hamburger.setAttribute('aria-expanded', isActive);
+        }
+
+        document.querySelectorAll('.menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.menu').classList.remove('active');
+                document.querySelector('.hamburger').classList.remove('active');
+                document.querySelector('.hamburger').setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        const carousel = {
+            currentSlide: 0,
+            items: document.querySelectorAll('.carousel-item'),
+            indicators: document.querySelectorAll('.indicator'),
+            interval: null,
+
+            init() {
+                document.querySelector('.carousel-prev').addEventListener('click', () => this.prev());
+                document.querySelector('.carousel-next').addEventListener('click', () => this.next());
+
+                this.indicators.forEach((indicator, index) => {
+                    indicator.addEventListener('click', () => this.goToSlide(index));
+                });
+
+                this.startAutoSlide();
+
+                const carouselElement = document.querySelector('.carousel');
+                carouselElement.addEventListener('mouseenter', () => this.pauseAutoSlide());
+                carouselElement.addEventListener('mouseleave', () => this.startAutoSlide());
+
+                this.addSwipeListeners(carouselElement);
+            },
+
+            goToSlide(n) {
+                this.items[this.currentSlide].classList.remove('active');
+                this.indicators[this.currentSlide].classList.remove('active');
+
+                this.currentSlide = (n + this.items.length) % this.items.length;
+
+                this.items[this.currentSlide].classList.add('active');
+                this.indicators[this.currentSlide].classList.add('active');
+            },
+
+            next() {
+                this.goToSlide(this.currentSlide + 1);
+            },
+
+            prev() {
+                this.goToSlide(this.currentSlide - 1);
+            },
+
+            startAutoSlide() {
+                this.interval = setInterval(() => this.next(), 5000);
+            },
+
+            pauseAutoSlide() {
+                clearInterval(this.interval);
+            },
+
+            addSwipeListeners(element) {
+                let touchStartX = 0;
+                let touchStartY = 0;
+                let touchEndX = 0;
+                let touchEndY = 0;
+
+                const handleGesture = () => {
+                    const deltaX = touchEndX - touchStartX;
+                    const deltaY = touchEndY - touchStartY;
+                    const threshold = 50; 
+                    const restraint = 100; 
+
+                    if (Math.abs(deltaX) >= threshold && Math.abs(deltaY) <= restraint) {
+                        if (deltaX > 0) {
+                            this.prev();
+                        } else {
+                            this.next();
+                        }
+                    }
+                };
+
+                element.addEventListener('touchstart', (e) => {
+                    touchStartX = e.changedTouches[0].screenX;
+                    touchStartY = e.changedTouches[0].screenY;
+                }, false);
+
+                element.addEventListener('touchend', (e) => {
+                    touchEndX = e.changedTouches[0].screenX;
+                    touchEndY = e.changedTouches[0].screenY;
+                    handleGesture();
+                }, false);
+            }
+        };
+
+        if (document.querySelector('.carousel')) {
+            carousel.init();
+        }
+    </script>
+</body>
+</html>
