@@ -4,6 +4,23 @@
   <meta charset="UTF-8">
   <title>战神赛特 - 沙漠之王的怒吼</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '540184255214977');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=540184255214977&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
   <style>
  
     * {
@@ -97,6 +114,13 @@
       justify-content: center;
     }
     .character-frame img {
+      max-width: 100%;
+      max-height: 70vh;
+      height: auto;
+      object-fit: contain;
+    }
+    /* 添加视频样式 */
+    .character-frame video {
       max-width: 100%;
       max-height: 70vh;
       height: auto;
@@ -266,6 +290,13 @@
           <div class="frame-glow"></div>
           
           <img src="images/戰神塞特 (2).png" alt="战神赛特">
+        
+          <!--
+          <video autoplay loop muted playsinline>
+            <source src="videos/your-video.mp4" type="video/mp4">
+            您的浏览器不支持视频标签。
+          </video>
+          -->
         </div>
       </div>
       
@@ -282,8 +313,8 @@
 <p class="promo-text">點擊下方按鈕，一鍵領取精彩好禮！ </p>
 <p class="promo-details">活動限時開放，名額有限，先到先得！ </p>
         
-        
-        <a href="https://97y.me/t4Bge" class="cta-btn">立即领取</a>
+        <!-- 添加了点击事件跟踪 -->
+        <a href="https://97y.me/t4Bge" class="cta-btn" onclick="fbq('track', 'Lead');">立即领取</a>
       </div>
     </div>
   </div>
