@@ -6,6 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="description" content="GOFUN - 加入高品質休閒娛樂社區，百款遊戲任玩，專屬會員禮遇等你體驗！">
   <link rel="preload" href="images/frame_1641@1x-1.png" as="image">
+  <!-- Favicon - 用于替换搜索结果中的默认图标(地球)和浏览器标签页图标 -->
+  <link rel="icon" href="images/IMG_1751-150x150.png" type="image/png">
+  <link rel="shortcut icon" href="images/IMG_1751-150x150.png" type="image/png">
+  <link rel="apple-touch-icon" href="images/IMG_1751-150x150.png">
+  <!-- 搜索引擎专用图标 -->
+  <meta property="og:image" content="images/IMG_1751-150x150.png">
+  <meta name="msapplication-TileImage" content="images/IMG_1751-150x150.png">
+  <meta itemprop="image" content="images/IMG_1751-150x150.png">
 
   <script>
     !function(f,b,e,v,n,t,s)
@@ -377,6 +385,8 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
       color: var(--primary-color);
       margin: 0 10px;
     }
+    
+
     @media (min-width: 768px) {
       .content {
         padding: 30px 40px;
@@ -567,12 +577,14 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
         <a href="#" onclick="fbq('track', 'ViewContent'); logUserAction('terms_click');">使用條款</a> |
         <a href="#" onclick="fbq('track', 'ViewContent'); logUserAction('responsible_click');">理性娛樂</a>
       </p>
+      
+
     </footer>
   </div>
 
   <script>
     const preloadImages = () => {
-      const images = ['images/logo.png', 'images/frame_1641@1x-1.png'];
+      const images = ['images/logo.png', 'images/frame_1641@1x-1.png', 'images/IMG_1751-150x150.png'];
       images.forEach(src => {
         const img = new Image();
         img.src = src;
